@@ -1,14 +1,6 @@
 /* global riot,page */
-import routes from './routes'
+const routes = require('./routes')
 
-routes.map(function (route) {
-  const { path, component } = route
-
-  page(path, function (req) {
-    System.import(`../pages/${component}.tag`).then(() => {
-      riot.mount('app', component, req.params)
-    })
-  })
-})
+routes.generate('client', riot, { get: page })
 
 page()
