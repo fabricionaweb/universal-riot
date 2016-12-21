@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+
+# npm and yarn
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# bundle files
+public/
+
+# git files
+!.gitkeep
+!.keep
