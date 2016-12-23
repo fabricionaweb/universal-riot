@@ -17,8 +17,8 @@ const routes = [
   }
 ]
 
-const generate = function (origin, riot, app) {
-  const isBrowser = origin === 'client'
+const generate = function (riot, app) {
+  const isBrowser = typeof window !== 'undefined'
 
   routes.forEach(function (route) {
     const { path } = route

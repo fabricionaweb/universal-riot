@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000
 app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, '..', 'public')))
 
-routes.generate('server', riot, app)
+routes.generate(riot, app)
 
 app.listen(port, function () {
   console.log(`Listen http://localhost:${port}`)

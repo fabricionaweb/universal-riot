@@ -1,6 +1,6 @@
 /* global riot,page */
 const routes = require('./routes')
 
-routes.generate('client', riot, { get: page })
+routes.generate(riot, { get: page })
 
 page()
