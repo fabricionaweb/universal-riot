@@ -1,8 +1,0 @@
-{
-  "dev": "run clean && run-p server watch",
-  "build": "run clean && webpack -p",
-
-  "watch": "webpack -w",
-  "server": "node-dev ./app/server",
-  "clean": "rimraf ./public/*"
-}
